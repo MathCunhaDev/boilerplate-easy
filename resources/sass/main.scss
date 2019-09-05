@@ -1,0 +1,33 @@
+@import 'reset';
+@import 'variable';
+
+.header{
+
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    flex-direction: column;
+}
+
+.footer{
+
+}
+
+.title{
+    color: black;
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.description{
+    color: black;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
