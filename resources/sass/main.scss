@@ -1,5 +1,10 @@
 @import 'reset';
 @import 'variable';
+@import 'mixins';
+
+html{
+    font-size: 10px;
+}
 
 .header{
 
@@ -11,8 +16,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #efefef;
+    background-color: lightgreen;
     flex-direction: column;
+
+    @include screen-sm{
+        background-color: lightcoral;
+    }
+
+    @include screen-md{
+        background-color: lightblue;
+    }
+
+    @include screen-lg{
+        background-color: lightyellow;
+    }
+
+    @include screen-xl{
+        background-color: lightslategrey;
+    }
 }
 
 .footer{
@@ -21,13 +42,14 @@
 
 .title{
     color: black;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 10px;
+    
 }
 
 .description{
     color: black;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

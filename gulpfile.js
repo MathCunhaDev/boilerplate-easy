@@ -39,7 +39,7 @@ gulp.task('build-img', function(){
 
 //concat css
 gulp.task('concat', function (){
-    return gulp.src('resources/css/**/*.css')
+    return gulp.src('resources/css/main.css')
     .pipe(concatCss("main.css"))
     .pipe(gulp.dest('resources/css/concat/')); 
 });
@@ -48,13 +48,13 @@ gulp.task('concat', function (){
 gulp.task('compress', function() {
     gulp.src('resources/js/scripts.js')
       .pipe(minify())
-      .pipe(gulp.dest('dist'))
+      .pipe(gulp.dest('dist/js'))
   });
 
 //minify css
 gulp.task('minify-css', function(){
     return gulp.src('resources/css/concat/main.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(cleanCSS({compatibility: 'ie9'}))
     .pipe(gulp.dest('dist/css'));
 });
 
