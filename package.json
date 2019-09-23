@@ -19,5 +19,7 @@
     "gulp-sass": "^4.0.2",
     "sass": "^1.22.12"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash.update": "^4.10.2"
+  }
 }
