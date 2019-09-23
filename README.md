@@ -1,8 +1,8 @@
 # Easy
 Um pequeno boilerplate feito com Gulp, Bootstrap, Sass e jQuery. 
 
-#Download
+# Download
 Clone o projeto e rode o npm install na raiz, ele instalará as dependências do projeto. 
 
-#Uso 
+# Uso 
 A pasta resources contém os arquivos de desenvolvimento, a pasta dist receberá os arquivos minificados e prontos para publicação. 
